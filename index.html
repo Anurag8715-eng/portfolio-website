@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anurag Shrivastav | Data Science Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<style>
+:root{
+    --primary:#ffb400;
+    --bg:#0a0a0c;
+    --glass:rgba(255,255,255,0.04);
+    --border:rgba(255,255,255,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Space Grotesk',sans-serif;
+    background:var(--bg);
+    color:white;
+}
+#particles-js{
+    position:fixed;
+    inset:0;
+    z-index:1;
+}
+.content{
+    position:relative;
+    z-index:10;
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+}
+section{
+    min-height:100vh;
+    padding:120px 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.accent{
+    color:var(--primary);
+    letter-spacing:3px;
+    font-size:.85rem;
+    margin-bottom:15px;
+    font-weight:700;
+}
+h1{
+    font-size:clamp(3.5rem,10vw,6rem);
+    line-height:.9;
+    margin-bottom:20px;
+}
+.card{
+    background:var(--glass);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:35px;
+    backdrop-filter:blur(15px);
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:22px;
+}
+.skill-tag{
+    display:inline-block;
+    margin:6px;
+    padding:6px 16px;
+    border-radius:50px;
+    background:rgba(255,180,0,.12);
+    color:var(--primary);
+    font-size:.85rem;
+}
+
+/* buttons */
+.btn{
+    display:inline-block;
+    padding:14px 34px;
+    border-radius:50px;
+    font-weight:700;
+    text-decoration:none;
+    margin-top:25px;
+}
+.btn-primary{
+    background:var(--primary);
+    color:black;
+    box-shadow:0 10px 30px rgba(255,180,0,.35);
+}
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+    margin-left:15px;
+}
+
+/* floating hire */
+.hire-float{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    z-index:100;
+    background:var(--primary);
+    color:black;
+    padding:14px 34px;
+    border-radius:50px;
+    font-weight:700;
+    text-decoration:none;
+    box-shadow:0 10px 30px rgba(255,180,0,.35);
+}
+
+/* social */
+.social-sidebar{
+    position:fixed;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background:var(--glass);
+    padding:18px 12px;
+    border-radius:40px;
+    border:1px solid var(--border);
+    z-index:100;
+}
+.social-sidebar a{
+    color:#aaa;
+    font-size:1.4rem;
+    transition:.3s;
+}
+.social-sidebar a:hover{
+    color:var(--primary);
+    transform:scale(1.2);
+}
+
+/* mobile */
+@media(max-width:768px){
+    .social-sidebar{
+        flex-direction:row;
+        top:auto;
+        bottom:20px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- SOCIAL -->
+<div class="social-sidebar">
+    <a href="https://www.linkedin.com/in/anurag-shrivastav-4772b426a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/Anurag8715-eng" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/_anurag_shrivastava__" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+<a href="#hireme" class="hire-float">HIRE ME</a>
+
+<div class="content">
+
+<!-- HERO -->
+<section>
+<span class="accent">DATA SCIENCE ASPIRANT</span>
+<h1>ANURAG<br>SHRIVASTAV.</h1>
+
+<p style="color:#aaa;max-width:650px;font-size:1.1rem;">
+Highly motivated B.Tech Computer Science (Data Science) student seeking an entry-level
+<b>Data Scientist / Data Analyst</b> role. Passionate about applying Python, data analysis
+and machine learning concepts to solve real-world problems.
+</p>
+
+<a href="assets/Anurag_Resume.pdf" download class="btn btn-primary">DOWNLOAD RESUME</a>
+<a href="#projects" class="btn btn-outline">VIEW PROJECTS</a>
+
+<div style="display:flex;gap:50px;margin-top:50px;flex-wrap:wrap;">
+    <div><h2 style="color:#ffb400;">2026</h2><p style="color:#888;">Graduation</p></div>
+    <div><h2 style="color:#ffb400;">2+</h2><p style="color:#888;">Major Projects</p></div>
+    <div><h2 style="color:#ffb400;">Python</h2><p style="color:#888;">Primary Skill</p></div>
+</div>
+</section>
+
+<!-- WHAT I DO -->
+<section>
+<span class="accent">// WHAT I DO</span>
+<div class="grid">
+    <div class="card">
+        <h3>📊 Data Analysis</h3>
+        <p style="color:#888;">Clean, analyze and interpret data using Pandas & NumPy.</p>
+    </div>
+    <div class="card">
+        <h3>🤖 Machine Learning</h3>
+        <p style="color:#888;">Build predictive models using supervised & unsupervised learning.</p>
+    </div>
+    <div class="card">
+        <h3>📈 Visualization</h3>
+        <p style="color:#888;">Create clear insights using Matplotlib & Seaborn.</p>
+    </div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<span class="accent">// KEY PROJECTS</span>
+<div class="grid">
+    <div class="card">
+        <h3>Stock Price Prediction Model</h3>
+        <p style="color:#888;">
+            Time-series forecasting using ARIMA / LSTM with data cleaning
+            and feature extraction.
+        </p>
+        <p style="color:#666;font-size:.9rem;">
+            <b>Tools:</b> Python, TensorFlow, Keras, Pandas
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>E-commerce Customer Segmentation</h3>
+        <p style="color:#888;">
+            K-Means clustering to identify distinct customer groups
+            for better business decisions.
+        </p>
+        <p style="color:#666;font-size:.9rem;">
+            <b>Tools:</b> Python, Scikit-learn, Seaborn
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section>
+<span class="accent">// TECHNICAL SKILLS</span>
+<div class="card">
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">Pandas</span>
+    <span class="skill-tag">NumPy</span>
+    <span class="skill-tag">Matplotlib</span>
+    <span class="skill-tag">Seaborn</span>
+    <span class="skill-tag">Machine Learning</span>
+    <span class="skill-tag">Statistical Modeling</span>
+    <span class="skill-tag">Data Visualization</span>
+    <span class="skill-tag">Basic SQL</span>
+    <span class="skill-tag">Git & GitHub</span>
+</div>
+</section>
+
+<!-- HIRE ME -->
+<section id="hireme">
+<span class="accent">// HIRE ME</span>
+<div class="card">
+    <h3>Anurag Shrivastav</h3>
+    <p style="color:#aaa;">Aspiring Data Scientist | Entry-Level Opportunities</p>
+
+    <p style="color:#888;margin-top:15px;">
+        📞 <b>Phone:</b> +91 7987020204<br>
+        📧 <b>Email:</b> anuragshri529@gmail.com<br>
+        📍 <b>Location:</b> Bhopal, Madhya Pradesh
+    </p>
+
+    <a href="assets/Anurag_Resume.pdf" download class="btn btn-primary">
+        DOWNLOAD FULL RESUME
+    </a>
+</div>
+</section>
+
+<footer style="text-align:center;padding:40px 0;color:#666;">
+© 2026 Anurag Shrivastav • Data Science Portfolio
+</footer>
+
+</div>
+
+<!-- PARTICLES (UNCHANGED) -->
+<script>
+particlesJS("particles-js", {
+    "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ffb400" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3 },
+        "size": { "value": 2 },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffb400",
+            "opacity": 0.1,
+            "width": 1
+        },
+        "move": { "enable": true, "speed": 1, "random": true }
+    },
+    "interactivity": {
+        "events": { "onhover": { "enable": true, "mode": "grab" } }
+    },
+    "retina_detect": true
+});
+</script>
+
+</body>
+</html>
+
